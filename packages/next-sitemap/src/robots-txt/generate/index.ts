@@ -26,9 +26,6 @@ export const generateRobotsTxt = (config: IConfig): string | null => {
     content += '\n'
   })
 
-  // Append host
-  content += `# Host\nHost: ${config.siteUrl}\n`
-
   if (additionalSitemaps && additionalSitemaps.length > 0) {
     content += `\n# Sitemaps\n`
 
